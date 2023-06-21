@@ -4,19 +4,25 @@ using namespace std;
 int main()
 {
     string s;
-    cin >> s;
+    int n;
+    cin >> n;
 
-    if (s.size() % 2)
+    while (n--)
     {
-        s.erase(s.begin() + s.size() / 2);
-    }
-    if (s != string(s.size(), s[0]))
-    {
-        cout << "YES";
-    }
-    else
-    {
-        cout << "NO";
+        cin >> s;
+
+        if (s.size() % 2)
+        {
+            s.erase(s.begin() + s.size() / 2);
+        }
+        if (s != string(s.size(), s[0]))
+        {
+            cout << "YES" << endl;
+        }
+        else
+        {
+            cout << "NO" << endl;
+        }
     }
 
     return 0;
