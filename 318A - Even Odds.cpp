@@ -1,24 +1,18 @@
 #include <iostream>
+
 using namespace std;
 
 int main()
 {
-    int n, k;
+    long long n, k;
     cin >> n >> k;
-
-    int result;
-
     if (k <= (n + 1) / 2)
     {
-        result = 2 * k - 1;
+        cout << k * 2 - 1 << endl;
     }
     else
     {
-        k -= (n + 1) / 2;
-        result = k * 2;
+        cout << (k - (n + 1) / 2) * 2 << endl;
     }
-
-    cout << result << endl;
-
     return 0;
 }
